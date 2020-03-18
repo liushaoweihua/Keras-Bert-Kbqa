@@ -9,7 +9,7 @@ Implementation of *Neural Network (NN)* model in the field of *Knowledge Based Q
 * **Build Knowledge System (KB)**
   * Organize knowledge system based on business characteristics.
   * Extract triples from unstructured input text `(Subject, Predicate, Object)` and store them in a specific way (usually a graph database). 
-    * For example: "Chow SingChi's movie *Kung Fu Hustle * was released in 2004", including two pairs of triples `(Chow SingChi, filmed, Kung Fu Hustle)`, `(Kung Fu Hustle, release time, 2004)`.
+    * For example: "Chow SingChi's movie *Kung Fu Hustle* was released in 2004", including two pairs of triples `(Chow SingChi, filmed, Kung Fu Hustle)`, `(Kung Fu Hustle, release time, 2004)`.
   
 * **Standard Question Answering (QA)**
   * Relational entity extraction
@@ -20,7 +20,7 @@ Implementation of *Neural Network (NN)* model in the field of *Knowledge Based Q
     * For example: Chow SingChi and Xing Ye should correspond to the same entity.
   * Relationship linking
     * Linking the extracted entities and relationships to ensure that the linked entity relationship is valid in the knowledge system.
-    * For example, in the *Douban Movie Review* scene, asking "What is the name of Chou Xingchi's mother", the obtained `(Chow SingChi, mother)` is illegal because the relationship is not established in the knowledge system.
+    * For example, in the *Douban Movie Review* scene, asking "What is the name of Chow SingChi's mother", the obtained `(Chow SingChi, mother)` is illegal because the relationship is not established in the knowledge system.
   * Response generating
     * Retrieve legal relational entity pairs in the knowledge system and generate output results.
 
