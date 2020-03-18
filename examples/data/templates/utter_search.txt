@@ -1,0 +1,8 @@
+{
+    "豆瓣评分": "'，'.join([str(item['rate']) for item in app.database if item['title']==\"{}\"])",
+    "演员有谁": "'，'.join([item['actor'] for item in app.database if item['title']==\"{}\"][0])",
+    "演员的作品有什么": "'，'.join([item['title'] for item in app.database if \"{}\" in item['actor']])",
+    "电影类型是什么": "'，'.join([item['category'] for item in app.database if item['title']==\"{}\"][0])",
+    "电影语言是什么": "'，'.join([item['language'] for item in app.database if item['title']==\"{}\"][0])",
+    "电影上映时间是什么": "'，'.join([str(item['showtime']) for item in app.database if item['title']==\"{}\"])"
+}
